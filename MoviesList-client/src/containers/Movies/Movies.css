@@ -18,4 +18,5 @@ h1 {
 
 ul {
     margin-left: 150px;
+   list-style-type: none;
 }

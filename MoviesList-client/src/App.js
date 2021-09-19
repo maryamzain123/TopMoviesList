@@ -10,20 +10,20 @@ import MovieShow from "./components/MovieShow/MovieShow"
 
 function App() {
   return (
-    
+
     <div className="App-wrapper">
       <Router>
-      
-        <NavBar/>
-        <Switch>
-          <Route  path="/home" render={(routerProps => <Home {...routerProps} />)}/>
-          <Route  path="/movies/new" render={(routerProps => <MovieForm {...routerProps} />)} />
-          <Route  path="/movies/:id" render={(routerProps => <MovieShow {...routerProps} />)} />
 
-          <Route  path="/movies" render={(routerProps => <Movies {...routerProps} />)} />
+        <NavBar />
+        <Switch>
+          <Route path="/movies/new" render={(routerProps => <MovieForm {...routerProps} />)} />
+          <Route path="/movies/:id" render={(routerProps => <MovieShow {...routerProps} />)} />
+          <Route path="/movies" render={(routerProps => <Movies {...routerProps} />)} />
+          <Route path="/" render={(routerProps => <Home {...routerProps} />)} />
+
         </Switch>
-      
-    
+
+
       </Router>
 
     </div>
