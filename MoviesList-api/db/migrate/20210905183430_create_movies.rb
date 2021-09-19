@@ -4,6 +4,8 @@ class CreateMovies < ActiveRecord::Migration[6.1]
       t.string :title
       t.string :rating
       t.string :content
+      t.string :url
+      t.integer :likes
      
 
       t.timestamps

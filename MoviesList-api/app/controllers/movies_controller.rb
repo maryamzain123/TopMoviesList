@@ -18,8 +18,6 @@ class MoviesController < ApplicationController
     def show
         movie = Movie.find(params[:id])
         render json: movie.to_json(:include => :watchlists)
-
-
     end
 
 
@@ -27,7 +25,7 @@ class MoviesController < ApplicationController
     private
 
     def movie_params
-        params.require(:movie).permit(:title, :rating, :content)
+        params.require(:movie).permit(:title, :rating, :content, :url)
     end
 
 
