@@ -19,6 +19,18 @@ class MoviesController < ApplicationController
         movie = Movie.find(params[:id])
         render json: movie.to_json(:include => :watchlists)
     end
+    
+    def update
+        
+        movie = Movie.find(params[:id])
+        if movie.update(movie_params)
+            render json:movie.to_json(:include => :watchlists)
+        else
+            render json: movies.errors
+        end
+
+
+    end
 
 
     private
