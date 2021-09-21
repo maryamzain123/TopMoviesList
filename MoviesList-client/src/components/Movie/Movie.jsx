@@ -2,9 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import "./Movie.css"
 
+
 const Movie = ({movie}) => {
     
     let {id, title, content, rating, url} = movie
+    
     return (
         <div className="movie">
             <img src={url} alt={title} />

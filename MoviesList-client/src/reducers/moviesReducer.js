@@ -1,5 +1,6 @@
 const moviesReducer = (state={movies:[], requesting:true}, action) => {
-    switch (action.type) {
+    switch (action.type)
+    {
         case 'START_FETCHING_MOVIES':
             return {
                 ...state, 
@@ -28,6 +29,7 @@ const moviesReducer = (state={movies:[], requesting:true}, action) => {
                     movies: [...state.movies, action.movie]
     
                 }
+               
           
             
     

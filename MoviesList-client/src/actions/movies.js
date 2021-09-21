@@ -10,8 +10,6 @@ export const fetchMovies = () => {
     }
 }
 
-
-
 export const addMovie = (movieinfo) => {
     return dispatch => {
 
@@ -44,3 +42,4 @@ export const addMovie = (movieinfo) => {
 
     }
 }
+

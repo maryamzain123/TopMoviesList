@@ -40,8 +40,9 @@ class MovieForm extends Component {
                     <br />
                     <textarea onChange={this.handleChange} type="text" name="content" id="" placeholder="Write something about the movie..." value={this.state.content} />
                     <br />
-                    <input onChange={this.handleChange} type="url" name="url" id="" placeholder="image url" value={this.state.url} />
-
+                    <input onChange={this.handleChange} type="url" name="url" id="" placeholder="paste image url" value={this.state.url} />
+                    <br />
+                    <br />
                     <input type="submit" value="Submit" />
                 </form>
             </div>
