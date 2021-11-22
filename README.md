@@ -5,7 +5,7 @@ TopMoviesList
 
 Description:
 
-Welcome to the Guestbook single page application! This is a demo app created using React and Ruby on Rails as our back-end. This app helps the user in saving movies in their watchlists to watch them late.
+Welcome to the Top movies list application! This is a demo app created using React and Ruby on Rails as our back-end. This app helps the user in saving movies in their watchlists to watch them late.
 
 Installation:
 
